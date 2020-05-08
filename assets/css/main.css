@@ -1,0 +1,31 @@
+a:hover {
+  background: #ffaeff;
+  text-decoration: none;
+}
+a.no-highlight {
+  background-color: transparent;
+}
+a.no-highlight:hover {
+  color: #0ccea1;
+}
+.header-links {
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+@media (min-width: 500px) {
+  .header-links {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.list-unstyled {
+  list-style-type: none;
+}
+.list-inline {
+  display: -ms-flexbox;
+  display: flex;
+}
+.list-inline li:not(:last-of-type) {
+  padding-right: 20px;
+}
