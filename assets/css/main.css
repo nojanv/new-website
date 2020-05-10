@@ -365,9 +365,6 @@ section p:last-child {
   background-color: #ffffff;
   text-align: left;
 }
-.projects {
-  /* background-color: #dffff9; */
-}
 
 .resume {
   background-color: #dff5ff;
@@ -419,6 +416,7 @@ section p:last-child {
 .resume__item-links {
   letter-spacing: 1px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .resume__item-links .fa {
   margin-right: 0.5em;
@@ -431,6 +429,7 @@ section p:last-child {
   .resume__item-summary {
     margin-bottom: 60px;
   }
+
   .resume__item-description:last-of-type,
   .resume__item-summary:last-of-type {
     margin-bottom: 0;
@@ -443,14 +442,45 @@ section p:last-child {
     width: 70%;
   }
 }
-
-
-/* @media (min-width: 500px) {
-
-
-  
-  .header-title {
-    font-size: 2.5rem;
-    margin: 0;
+}
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.footer > .container {
+  font-style: italic;
+}
+.footer p {
+  margin-bottom: 10px;
+}
+.footer__links {
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer .fa {
+  margin-right: 0.5em;
+}
+.footer .fa:hover {
+  color: #ccc;
+}
+@media (min-width: 500px) {
+  .footer > .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
-} */
+  .footer p {
+    margin-bottom: 0;
+  }
+}
+.dark {
+  background-color: #202631;
+  color: #fff;
+}
+.dark a {
+  color: #fff;
+  background-color: transparent;
+}
