@@ -308,10 +308,10 @@ body {
   }
 
 .header-photo {
-  max-width: 280px;
+  max-width: 150px;
 }
 @media (min-width: 750px) {
-  .header__photo {
+  .header-photo {
     max-width: 300px;
   }
 }
