@@ -8,5 +8,8 @@
   },
   "author": "nouzhan vakili dastjerd",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "prettier": {
+    "htmlWhitespaceSensitivity": "css"
+  }
 }

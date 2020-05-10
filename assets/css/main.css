@@ -1,35 +1,169 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 @font-face {font-family: "RobotoSlab-ExtraBold";
   src: url("../fonts/RobotoSlab-ExtraBold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 
-
+a {
+  text-decoration: none;
+  color: black;
+  background: rgba(245, 110, 225, 0.5);
+  transition: all linear 0.2s;
+}
 a:hover {
-  background: #ffaeff;
+  background: rgba(202, 68, 182, 0.5);
   text-decoration: none;
 }
 a.no-highlight {
   background-color: transparent;
 }
 a.no-highlight:hover {
-  color: #0ccea1;
+  color: #0c6f9d;
 }
+.email {
+  background: none;
+}
+
 .header-links {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 10px 0;
 }
-.container {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 20px;
-}
+
 @media (min-width: 500px) {
   .header-links {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px;
 }
 @media (min-width: 500px) {
   .container {
@@ -46,9 +180,14 @@ a.no-highlight:hover {
 .list-inline li:not(:last-of-type) {
   padding-right: 20px;
 }
-.header-affiliate {
-  font-family: "Roboto";
+
+ul.list-default,
+.about ul {
+  list-style: initial;
+  margin-left: 2em;
+  margin-bottom: 20px;
 }
+
 .header-contact {
   font-family: "Inconsolata", "Consolas", monospace;
   margin: 10px 0;
@@ -84,14 +223,9 @@ a.no-highlight:hover {
 } */
 
 .header-title {
-  /* font-family: "Leitura News"; */
-  /* font-family: "RobotoSlab-ExtraBold";
-  font-size: 2rem;
-  line-height: 1.6;
-  quotes: "“" "”" "‘" "’"; */
   margin: 0 auto;
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.55rem;
+  margin-bottom: 0px;
   position: relative;
   display: table;
   padding: 0 10px;
@@ -99,7 +233,8 @@ a.no-highlight:hover {
 /* add the pretty line behind name */
 .header-title::after {
   content: "";
-  background-color: #cdf3ff;
+  /* background-color: #cdf3ff; */
+  background-color: #abdfee;
   height: 5px;
   position: absolute;
   /* adjust the height of it */
@@ -113,6 +248,10 @@ a.no-highlight:hover {
 @font-face {font-family: "Poppins-Light";
   src: url("../fonts/Poppins-Light.ttf") format("truetype");
 }
+.font-secondary,
+.about h3,
+.resume__location,
+.resume__item-links,
 .header-currently {
   /* font-family: "Larsseit", -apple-system, BlinkMacSystemFont, "Futura",
   sans-serif; */
@@ -128,9 +267,16 @@ a.no-highlight:hover {
 .header__intro {
   margin-bottom: 10px;
 }
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
 h1 {
   font-weight: bold;
 }
+
 body {
   background-color: #fff6fe;
   color: #052d3f;
@@ -186,8 +332,116 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+.section-title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  display: table;
+  padding: 0 10px;
+  z-index: 2;
+}
+.section-title::after {
+  content: "";
+  background-color: #ffcbf7;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+section p:last-child {
+  margin-bottom: 0px;
+}
 .about {
+  background-color: #ffffff;
+  text-align: left;
+}
+.projects {
+  /* background-color: #dffff9; */
+}
+
+.resume {
   background-color: #dff5ff;
+  margin-bottom: 20px;
+}
+.resume__item-description,
+.resume__item-summary {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.resume__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+@media (min-width: 500px) {
+  .resume__title {
+    margin-bottom: 5px;
+  }
+}
+.resume__location {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.resume__tag {
+  font-family: "Inconsolata", "Consolas", monospace;
+  font-size: 0.9rem;
+  padding: 1px 4px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  color: #333;
+  background-color: #eaeaea;
+}
+.resume__tag.research {
+  background-color: #f2c4b7;
+  color: #8f5a51;
+}
+.resume__tag.development {
+  background-color: #83e2cf;
+  color: #315951;
+}
+.resume__tag.coursework {
+  background-color: #a0dbfe;
+  color: #315951;
+}
+.resume__item-links {
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.resume__item-links .fa {
+  margin-right: 0.5em;
+}
+.resume__item-links > li:not(:last-of-type) {
+  margin-right: 10px;
+}
+@media (min-width: 640px) {
+  .resume__item-description,
+  .resume__item-summary {
+    margin-bottom: 60px;
+  }
+  .resume__item-description:last-of-type,
+  .resume__item-summary:last-of-type {
+    margin-bottom: 0;
+  }
+  .resume__item-summary {
+    width: 30%;
+    padding-right: 40px;
+  }
+  .resume__item-description {
+    width: 70%;
+  }
 }
 
 

@@ -8,14 +8,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
       <link rel="stylesheet" href="assets/css/main.css" />
       <link href="//db.onlinewebfonts.com/c/2948ae79018a4124a04aee1f63d194c0?family=Leitura+News" rel="stylesheet" type="assets/css/main.css"/>
-      <script 
-      async="async"
-      defer="defer"
-      src="https://use.fontawesome.com/57d3cfe02e.js"
-      ></script>
+      <script async="async" defer="defer" src="https://use.fontawesome.com/57d3cfe02e.js"></script>
   </head>
-
-
   <body>
     <header class="header container">
       <div class="header-intro">
@@ -23,7 +17,9 @@
         <p class="header-currently">Computer Science</p>
         <p class="header-currently">Georgia Tech</p>
         <p class="header-pronouns">he/him/his</p>
-        <p class="header-contact">[nvd6] [at] [gatech] [dot] [edu]</p>
+        <p class="header-contact">
+          <a class="email" href="mailto: nvd6@gatech.edu">[nvd6] [at] [gatech] [dot] [edu]</a>
+        </p>
         <ul class="header-links list-unstyled list-inline">
           <li>
             <a href="https://linkedin.com/in/nouzhan" class="no-highlight">
@@ -46,26 +42,14 @@
             </a>
           </li>
         </ul>
-        <nav>
-          <ul class="header__nav list-unstyled list-inline">
-            <li><a data-scroll="data-scroll" href="#projects">Projects</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="header-photo">
         <figure class="header-photo-wrapper">
-          <img
-            src="assets/img/headshot.PNG"
-            alt="Drawing of me in a quarter-zip smiling"
-          />
-          <figcaption class="header-quote">
-            "pls imagine my iconic glasses :("
-          </figcaption>
+          <img src="assets/img/headshot.PNG" alt="Drawing of me in a quarter-zip smiling">
+          <figcaption class="header-quote">"pls imagine my iconic glasses :("</figcaption>
         </figure>
       </div>
     </header>
-
-
     <main>
       <section class="about">
         <div class="container">
@@ -74,31 +58,81 @@
             I am a computer scientist studying at the 
             <a href="https://gatech.edu">Georgia Institute of Technology</a>
             here in Atlanta. I'm currently in my final year and will graduate
-            in Spring of 2021. Recently, I've spent the summer of 2019 and
-            this summer (2020) in San Francisco as a software engineering intern 
+            in spring of 2021. Recently, I've spent the summer of 2019 and
+            this summer, 2020, in San Francisco as a software engineering intern 
             at <a href="https://www.salesforce.com/">Salesforce</a>, where I've
             built Agile-focused, internal tools to increase productivity for
-            all ~50,000 employees. In the past, I also worked at
+            all ~50,000 Salesforce employees. In the past, I also worked at
             <a href="sequr.io">Sequr.io</a>, a startup in Atlanta that brings
-            easily accessible and cloud-enabled security to modern offices. At
-            Georgia Tech, I also use AI to generate and anaylze humor with Lew Lefton and
-            Pete Ludovice as a part of the 
-            <a href="https://www.vip.gatech.edu/teams/humor-genome">
-              Humor Genome team</a>.
+            easily accessible and cloud-enabled security to modern offices. In
+            addition to my studies at Georgia Tech, I use AI to generate and
+            anaylze humor with 
+            <a href="https://lewlefton.gatech.edu/" >Lew Lefton</a> and
+            <a href="">Pete Ludovice</a>Pete Ludovice as a part of the 
+            <a href="https://www.vip.gatech.edu/teams/humor-genome">Humor Genome team</a>.
             </p>
-
             <p>
               My interests shift frequently, but generally tend around 
               product design, user research, and software development. 
               To sum up my interest succinctly: I want to help build things
               that are beautiful, helpful, and easy to use.
             </p>
+            <p>
+              Some of my favorite things outside of school and work are 
+              making my own kombucha, reading sci-fi novels, and trying new 
+              recipes :)
+            </p>
+        </div>
+      </section>
+      <section class="resume">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p>
+            Some recent projects I've completed, either personally or through
+            coursework.
+          </p>
+          <dl>
+            <dt class="resume__item-summary">
+              <h3 class="resume__title">Predicting Soccer Match Outcomes</h3>
+              <p class="resume__location">CS4641@gatech</p>
+              <div class="resume__tags">
+                <span class="resume__tag research">machine learning</span
+                ><span class="resume__tag development">development</span>
+              </div>
+            </dt>
+            <dd class="resume__item-description">
+              <p>
+                Soccer matches, and matches of all professional sports, are
+                intrinsically difficult to predict. As Felipe, a colleage of
+                who helped create this project, put it, "If it were easy to
+                predict games, then there'd be no point in playing them."
+                Nevertheless, using different classifiers, we built several
+                models using Python, Jupyter Notebook, and machine
+                learning / data science libraries (numpy, matplotlib,
+                scikit-learn etc.) to predict the outcomes of World Cup matches.
+                Our attemps reached ~75% accuracy in predicting games. Given
+                this was our first foray into machine learning, we consider it
+                great success.
+              </p>
+              <ul class="resume__item-links list-inline list-unstyled">
+                <li>
+                  <i class="fa fa-file-text-o"></i>
+                  <a href="https://acpollmann.github.io/soccer-training/" class="resume__link--paper">site</a>
+                </li>
+                <li>
+                  <i class="fa fa-video-camera"></i>
+                  <a href="https://youtu.be/qi-bapJYaMc" class="resume__link--talk">video</a>
+                </li>
+                <li>
+                  <i class="fa fa-code"></i>
+                  <a href="https://github.com/acpollmann/soccer-training"class="resume__link--code">code</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
         </div>
       </section>
     </main>
-
-
   </body>
-
 </html>
 
